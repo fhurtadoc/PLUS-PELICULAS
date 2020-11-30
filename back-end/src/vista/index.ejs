@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    
+    <title>inicio</title>
+
+     <%-include ("./partials/head") %> 
+          
+     <script type="text/javascript" src="js/scriptshome.js"></script> 
+</head>
+<body>
+<header>
+    <input type="checkbox" name="login" id="login">
+    <label for="login" id="etilogin">w</label>
+
+    <form action="/login" id="formlogin" method="POST">
+        <label for="usuario">usuario</label>
+        <input type="text" name="usuario">
+        <label for="password">password</label>
+        <input type="password" name="password">
+        <input type="submit" value="Entrar">
+    </form>    
+    <%-include ("./partials/navigation") %>
+    
+</header>
+<div id="titulos">
+    <h2>Peliculas</h2>
+    <h2>Series</h2>
+    <h2>Anime </h2>
+    <h2>Gratis en Audio Latino</h2>
+</div>
+<p id="info">
+    Las mejores películas series y animes en audio latino para toda la familia las encuentras
+    en PLUS PELÍCULAS gratis y sin casi publicidad 
+</p>
+    <section id="contenedor">        
+        
+    </section>
+    <%-include ("./partials/footer") %>    
+</body>
+ 
+</html>

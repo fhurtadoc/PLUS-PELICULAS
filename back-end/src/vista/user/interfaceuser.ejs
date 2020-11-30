@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>interface usuario</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/estilosuser.css"  type="text/css"> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery/jquery-3.5.1.min.js"></script>    
+    <script type="text/javascript" src="js/scriptuser.js"></script> 
+</head>
+<body>
+    <a href="" class="btn btn-primary btn-lg active">Cerrar sesion</a>
+    <h3>Bienvenido</h3>
+    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">NUEVO ELEMENTO</button>
+    <div id="contenedor">
+        <h3>Lista de Elementos</h3>
+        <table class="table table-dark">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Año</th>
+            <th scope="col">Imagen</th>
+            <th scope="col">Url</th>
+            <th scope="col">ELIMNAR</th>                    
+        </tr>
+        <tbody id="tbody">
+        </tbody>
+        </table>
+    </table>
+    </thead>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">NUEVO ELEMENTO</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="user/nuevo" method="POST" id="formularionuevo" application="/x-www-form-urlencoded" enctype="multipart/form-data" >
+                            
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" name="nombre"> <br/>
+                    
+            
+                    <label for="genero">GENERO</label>
+                    <input type="text" name="genero"> <br/>
+                    
+                    <label for="categoria">CATEGORIA</label>
+                    <input type="text" name="categoria"> <br/>
+            
+                    <label for="ano">AÑO</label>
+                    <input type="text" name="ano"> <br/>
+            
+                    <label for="imagen">IMAGEN</label>
+                    <input type="file" name="imagen"> <br/>
+            
+                    <label for="descripcion">DESCRIPCION</label>
+                    <textarea class="form-control" type="text" name="descripcion"cols="30" rows="5"></textarea> <br/>
+                        
+            
+                    <label for="capturas">LINKS</label>
+                    <input type="text" name="capturas"> <br/>
+            
+                    <input type="submit" value="ENVIAR"> <br/>                        
+                </form>   
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    
+                        
+                   
+</body>
+</html>
